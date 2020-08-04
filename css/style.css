@@ -5,8 +5,9 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  margin-top: 120px;
+ .top-section {
+  margin-top: 50px;
+  padding-bottom: 35px;
   background-color: #F6F6F9;
 }
 
@@ -46,7 +47,7 @@ header {
   background-color: #fff;
   box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
   border-radius: 5px;
-  padding: 5px 5px;
+  padding: 5px 15px;
   text-align: center;
   align-items: center;
   border-radius: 7px;
@@ -119,6 +120,8 @@ header {
   border-radius: 5px;
 }
 
+
+
 .nav {
   list-style-type: none;
   display: flex;
@@ -133,4 +136,272 @@ header {
   line-height: 23px;
   color: #515151;
   text-decoration: none;
+}
+
+.stats {
+  background: #F6F6F9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats li {
+  list-style-type: none;
+  margin: 20px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.stat {
+  width: 250px;
+}
+
+.stat::before {
+  content:"";
+  width: 2px;
+  height: 49px;
+  background-color:#F4CCD1;
+}
+
+.infected::before{
+  content: "";
+  width: 2px;
+  height: 74px;
+  background: #EB5569;
+}
+
+.stats-location {
+  width: 360px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.stats-location h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 15px;
+}
+
+.stat h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.infected p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #DB0000;
+}
+
+.recovered p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #05B135;
+}
+
+.stats li img {
+  margin: 0 10px;
+}
+
+.stats-txt h4, p {
+  margin: 0 0 5px 0;
+}
+
+.cov-news {
+  justify-content: space-between;
+  margin: 0 ;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.cov-news li {
+  list-style-type: none;
+  width: 386px;
+  margin: 10px 0;
+}
+
+.news-description h4 {
+  margin: 11px 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+}
+
+.placed-date {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B6D97;
+}
+
+.placed-date date::before {
+  content: " / ";
+  margin-left: 5px;
+}
+
+.notification-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px;
+  background-color: rgba(239, 186, 84, 0.18);
+  border-radius: 5px;
+}
+
+.notification-check {
+  background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+  border-radius: 5px; 
+  padding: 10px 15px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  transition: 500ms;
+}
+
+.notification-check:hover {
+  box-shadow: 0 0 7px #FE5C28;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left h3 {
+  margin: 0 18px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.news-section .container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.news-section{
+  margin-top: 30px;
+}
+
+.latest-news {
+  width: 800px;
+}
+
+.latest-news-list {
+  margin: 0;
+  padding: 16px 0 16px 0;
+}
+
+.latest-news-list li {
+  padding-bottom: 18px;
+  display: flex;
+  align-items: start;
+}
+
+.more-news {
+  text-decoration: none;
+  color: #fff;
+  background: #295093;
+  border-radius: 5px;
+  padding: 10px 32px;
+  text-align: center;
+}
+
+.button-center {
+  text-align: center;
+}
+
+.news-descrition-txt {
+  margin-left: 20px;
+}
+
+.news-descrition-txt h4 {
+  margin: 0;
+}
+
+
+.news-descrition-txt p {
+  margin: 8px 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #434343;
+}
+
+.popular-news {
+  width: 380px;
+}
+
+
+.popular-news-list{
+  background-color: #F6F6F9;
+  border-radius: 5px;
+  padding-inline-start: 0;
+  padding:  16px 20px 20px 20px;
+}
+
+.popular-news-list h3 {
+  margin-top: 0;
+}
+
+
+.popular-news-list li {
+  margin: 0px 0 30px 0px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.popular-news img {
+  margin-top: 70px;
+}
+
+.placed-date {
+  display: flex;
+  align-items: center;
+}
+
+.download-apps {
+  width: 1200px;
+  background: #F6F6F9;
+  border-radius: 5px;
+}
+
+.download-apps {
+  align-items: center;
+  display: flex;
+  padding: 40px 20px 0 20px;
+  border-radius: 5px;
+  margin: 50px 0 40px 0;
+}
+
+.app-description {
+  display: flex;
+  width: 800px;
+}
+
+.app-description-txt h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;  
+  color: #295093;
+  margin-bottom: 10px;
+}
+
+.app-description-txt p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.download-option img{
+  margin: 10px;
 }
